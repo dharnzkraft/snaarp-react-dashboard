@@ -2,7 +2,7 @@
 
 A drag-and-drop analytics dashboard built with React, replicating the Snaarp dashboard design.
 
-## 🛠 Tech Stack
+# Tech Stacks
 
 - **React 18** + **Vite** — fast dev/build tooling
 - **@hello-pangea/dnd** — drag and drop (actively maintained fork of react-beautiful-dnd)
@@ -10,7 +10,7 @@ A drag-and-drop analytics dashboard built with React, replicating the Snaarp das
 - **Recharts** — composable charting library
 - **Lucide React** — icon library
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Node.js >= 18
@@ -19,8 +19,8 @@ A drag-and-drop analytics dashboard built with React, replicating the Snaarp das
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/snaarp-dashboard.git
-cd snaarp-dashboard
+git clone https://github.com/dharnzkraft/snaarp-react-dashboard.git
+cd snaarp-react-dashboard
 
 # Install dependencies
 npm install
@@ -38,7 +38,7 @@ npm run build
 npm run preview
 ```
 
-## 🧩 Project Structure
+##  Project Structure
 
 ```
 src/
@@ -47,20 +47,12 @@ src/
 │   ├── Topbar.jsx            — Top search/notification bar
 │   ├── DashboardGrid.jsx     — DnD context + widget ordering
 │   └── widgets/
-│       ├── CloudNetworkWidget.jsx
-│       ├── FileSharingWidget.jsx
-│       ├── ActiveUsersWidget.jsx
-│       ├── DeviceManagementWidget.jsx
-│       ├── ProductivityReportWidget.jsx
-│       ├── EmailChartWidget.jsx
-│       ├── OnlineUsersWidget.jsx
-│       └── ActivityWidgets.jsx
 ├── App.jsx
 ├── main.jsx
 └── index.css
 ```
 
-## 🎯 Drag & Drop Implementation
+##  Drag & Drop Implementation
 
 Drag-and-drop is powered by `@hello-pangea/dnd`:
 
@@ -69,7 +61,7 @@ Drag-and-drop is powered by `@hello-pangea/dnd`:
 - **`Draggable`** wraps each widget — drag handles are passed down as props
 - Widget order is stored in React state as an array of IDs; `onDragEnd` reorders it with `splice`
 
-## 📦 Deploy to Vercel
+##  Deploy to Vercel
 
 ```bash
 npm i -g vercel
